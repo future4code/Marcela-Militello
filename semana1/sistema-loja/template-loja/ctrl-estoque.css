@@ -1,0 +1,14 @@
+body {
+    background-color: lightyellow;
+}
+
+.nome {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+a {
+    padding: 100px;
+    font-size: 20px;
+}

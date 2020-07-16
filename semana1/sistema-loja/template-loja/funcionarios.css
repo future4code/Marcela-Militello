@@ -1,0 +1,34 @@
+body {
+    background-color: lightyellow;
+}
+
+.nome {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+a {
+    padding: 100px;
+    font-size: 20px;
+}
+
+.caio {
+    font-size: 25px;
+    background-color: lightblue;
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.soter {
+    font-size: 25px;
+    background-color: lightcoral;
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.pedro {
+    font-size: 25px;
+    background-color: lightgreen;
+    width: 60px;
+}
