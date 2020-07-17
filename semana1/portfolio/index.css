@@ -1,0 +1,40 @@
+.nome {
+    text-align: center;
+    font-family: calibri;
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instit {
+    text-align: left;
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.empreg {
+    text-align: center;
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.habil {
+    tex-align: right;
+    display: inline-block;
+    margin-left: 200px;
+}
+
+section {
+    padding: 100px;
+}
+
+.icones > img {
+    width: 50px;
+    display: inline-block;
+    margin: 20px;
+
+}
