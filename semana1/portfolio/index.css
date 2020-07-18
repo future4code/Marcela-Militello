@@ -1,3 +1,18 @@
+.unicorn img {
+    width: 80px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;;
+}
+
+.menu > a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: calibri;
+}
+
 .nome {
     text-align: center;
     font-family: calibri;
@@ -28,13 +43,18 @@ img {
     margin-left: 200px;
 }
 
-section {
-    padding: 100px;
+.rodape {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.redes-sociais {
+    font-size: 20px;
 }
 
 .icones > img {
     width: 50px;
     display: inline-block;
-    margin: 20px;
-
+    margin: 10px;
+    margin-top: 0px;
 }

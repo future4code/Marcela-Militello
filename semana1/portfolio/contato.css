@@ -1,0 +1,19 @@
+.unicorn img {
+    width: 80px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;;
+}
+
+.menu > a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: calibri;
+}
+
+section {
+    text-align: center;
+    font-size: 30px;
+}
