@@ -1,0 +1,30 @@
+.unicorn img {
+    width: 80px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;;
+}
+
+.menu > a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: calibri;
+}
+
+.imagem1 {
+    width: 20%;
+    margin-left: 560px;
+}
+
+.imagem2 {
+    width: 20%;
+    margin-left: 560px;
+}
+
+p {
+    text-align: center;
+    font-family: calibri;
+    font-size: 20px;
+}

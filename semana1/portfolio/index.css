@@ -1,0 +1,60 @@
+.unicorn img {
+    width: 80px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.menu > a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: calibri;
+}
+
+.fundo {
+    background-color: whitesmoke;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 7px;
+}
+
+.nome {
+    text-align: center;
+    font-family: calibri;
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instit-empreg > ul {
+    font-size: 20px;
+    font-family: calibri;
+    list-style-type: none;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#redes {
+    font-size: 20px;
+    font-family: calibri;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.icons1 {
+    width: 40px;
+    display: inline-block;
+    margin-left: 640px;
+}
+
+.icons2 {
+    width: 40px;
+    display: inline-block;
+    margin-left: 40px;
+}

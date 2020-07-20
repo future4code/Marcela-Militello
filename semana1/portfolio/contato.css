@@ -1,0 +1,56 @@
+.unicorn img {
+    width: 80px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.menu > a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: calibri;
+}
+
+section {
+    text-align: center;
+    font-size: 30px;
+    font-family: calibri;
+}
+
+input[type=text] {
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 7px;
+  }
+
+ label {
+     font-size: 20px;
+     font-family: calibri;
+ } 
+
+ textarea {
+     height: 100px;
+     width: 300px;
+     margin: 5px;
+     box-sizing: border-box;
+     border: none;
+     border-radius: 7px;
+     resize: none;
+ }
+
+ input[type=submit]:hover {
+    background-color: lightcoral;
+  }
+
+  input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
