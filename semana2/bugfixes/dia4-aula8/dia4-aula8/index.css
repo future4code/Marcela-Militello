@@ -35,7 +35,7 @@ div>p:first-child {
 }
 
 div img {
-    background: black;
+    background:white;
 }
 
 .botao-amarelo {
@@ -73,12 +73,11 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
-#container-de-descricao > p {
+#container-de-descricao > ol {
     padding: 15px 0px;
-    margin-top: 100px;
 }
 
 #container-para-comprar {
