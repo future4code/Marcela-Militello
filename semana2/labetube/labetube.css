@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+}
+
+h1 {
+    margin-left: 2em; 
+}
+
+#txtBusca {
+  border:none;
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+  margin-right: 4em;
+}
+
+img {
+    width: 300px;
+}
+
+video {
+    width: 700px;
+}
+
+.video-config {
+    padding: 65px;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    padding: 55px;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    background-color: darkgrey;
+    padding: 20px;
+    font-family: Cambria;
+    font-size: 20px;
+}
