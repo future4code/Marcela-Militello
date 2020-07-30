@@ -55,3 +55,4 @@ f. 9*/
 // email = prompt("Qual é o seu e-mail?")
 
 // console.log("O e-mail " + email + " foi cadastrado com sucesso. Seja bem-vinda(o), " + nome + "!")
+
