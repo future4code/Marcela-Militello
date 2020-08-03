@@ -90,3 +90,29 @@ if (generoFilme === "fantasia" && precoIngresso < 15) {
 
 */
 
+/*DESAFIO2*/
+
+let nomeCompleto = prompt("Informe seu nome completo")
+let tipoJogo = prompt("Digite IN (internacional) ou DO (doméstico) para o tipo de jogo") 
+let etapaJogo = prompt("Digite SF (semi-final) ou DT (terceiro lugar) ou FI (final)")  
+let categoria = prompt("Digite a categoria (1, 2, 3 ou 4)")
+let quantidadeIngressos = prompt("Informe a quantidade de ingressos")
+let valorIngresso
+let valorTotal
+
+
+console.log("---Dados da compra---")
+console.log("Nome do cliente: " + nomeCompleto)
+
+if (tipoJogo === "DO") {
+    console.log("Tipo do jogo: Doméstico")
+} else if (tipoJogo === "IN") {
+    console.log("Tipo de jogo: Internacional")
+} else if (etapaJogo === "SF") {
+    console.log("Etapa do jogo: semi-final")
+} else if (etapaJogo === "DT") {
+    console.log("Etapa do jogo: terceiro lugar")    
+} else if (etapaJogo === "FI") {
+    console.log("Etapa do jogo: final")  
+}
+
