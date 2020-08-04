@@ -2,8 +2,8 @@ function adicionarItem() {
     const inputTarefa = document.getElementById("tarefa")
     let valor = inputTarefa.value
     const diaSemana = document.getElementById("dias-semana").value
-    
-    inputTarefa.value = ""
+
+    if (inputTarefa.value !== "") {
         
     switch(diaSemana) {
         case "domingo":
@@ -40,6 +40,12 @@ function adicionarItem() {
             const sabado = document.getElementById("sabado")
             sabado.innerHTML += `<li>${valor}</li>`
             break
-        
         }
+
+    } else {
+        alert("Digite uma tarefa!")
+         }
+
+         inputTarefa.value = ""
     }
+
