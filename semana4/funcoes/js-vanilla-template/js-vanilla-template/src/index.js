@@ -100,14 +100,15 @@ a) Darvas
    Goli
 
 b) Amanda
-   Caio*/
-
+   Caio
+*/
 
 
 /*-------- EXERCICIO 3
-x só será incluído na arrayFinal se for um número par. Além disso, irá para essa lista
-após ser multiplicado por x.
-?? Nome melhor ?? */
+x da array só será incluído na arrayFinal se for um número par. Além disso, irá para essa
+lista após ser multiplicado por x.
+
+Novo nome - arrayComNumeroPar*/
 
 
 
@@ -178,7 +179,6 @@ umaMensagem ("Esta é uma mensagem")
 /*-------- EXERCICIO 6
 
 a)
-
 function tamanhoDoArray (array) {
     return array.length
 }
@@ -189,4 +189,21 @@ console.log(quantidadeElementos)
 
 tamanhoDoArray(numeros)
 
+
+b)
+function indicaPar (numero) {
+    if (numero % 2 === 0) {
+    console.log("O número " + numero + " é par")
+    } else {
+    console.log("O número " + numero + " não é par")
+    }
+}  
+
+indicaPar(numero) 
+
+
+c)
+
 */
+
+
