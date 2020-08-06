@@ -14,13 +14,8 @@
 console.log("Bem vindo ao jogo de Blackjack!")
 
 if(confirm("Quer iniciar uma nova rodada?")) {
-      let ok = true
-} else {
-      console.log("O jogo acabou")
-}      
-
-const carta = comprarCarta(); 
-
+      console.log("Cartas dadas!")
+ 
 let cartaUsuarioUm = comprarCarta();
 let cartaUsuarioDois = comprarCarta();
 let cartaCompUm = comprarCarta();
@@ -38,3 +33,7 @@ if (pontuacaoUsuario > pontuacaoComp) {
 } else {
       console.log("Empate!")
 }
+
+} else {
+      console.log("O jogo acabou")
+}      
