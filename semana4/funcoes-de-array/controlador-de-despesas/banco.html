@@ -14,39 +14,42 @@
         <h1>Controlador de Despesas</h1><br>
         <h3>Cadastrar despesa</h3><br>
             <label for="valor">Valor</label>
-            <input type="text" id="valor" placeholder="R$"><br>
+            <input type="number" id="valor" placeholder="R$" value=""><br>
             <p>Tipo (Casa, Viagem, Rolês, Outros)</p>
-            <select name="tipo-da-despesa" id="tipo-da-despesa">
+            <select name="tipo-da-despesa" id="tipo-da-despesa" value="">
                 <option value="casa">Casa</option>
                 <option value="viagem">Viagem</option>
                 <option value="roles">Rolês</option>
                 <option value="outros">Outros</option>
             </select><br>
             <label for="descricao">Descrição</label>
-            <input type="text" id="descricao"><br><br>
+            <input type="text" id="descricao" value=""><br><br>
             <button onclick="cadastrar()">Cadastrar despesa</button>
     </section>
 
     <section id="secao">
         <h1>Despesas Detalhadas</h1><br>
         <p>Tipo (Casa, Viagem, Rolês, Outros)</p>
-        <select name="tipo-da-despesa" id="tipo-da-despesa">
+        <select name="tipo-da-despesa" id="tipo-da-despesa2" value="">
             <option value="casa">Casa</option>
             <option value="viagem">Viagem</option>
             <option value="roles">Rolês</option>
             <option value="outros">Outros</option>
         </select><br>
         <label for="valor-minimo">Valor Mínimo</label>
-        <input type="text" id="valor-minimo" placeholder="R$">
+        <input type="number" id="valor-minimo" placeholder="R$" value="">
         <label for="valor-maximo">Valor Máximo</label>
-        <input type="text" id="valor-maximo" placeholder="R$"><br><br>
+        <input type="number" id="valor-maximo" placeholder="R$" value=""><br><br>
         <button onclick="filtrar()">Filtrar</button>
         <button onclick="limparFiltros()">Limpar filtros</button>
+        <div id="verListaDespesas"></div>
     </section>
 
     <section id="secao">
         <h1>Extrato</h1>
         <h3>Valor Total:</h3>
+        <p id="valorTotal"></p>
+        <div id="despesaTotal"></div>
     </section>
 </section>
 
