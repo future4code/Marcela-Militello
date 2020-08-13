@@ -94,7 +94,7 @@ function classificacaoTriangulo (a, b, c){
 classificacaoTriangulo(a, b, c) //inserir números no lugar dos parâmetros
 */
 
-/* 5 - */
+/* 5 - 
 
 let numero1 = prompt ("Digite o primeiro número")
 let numero2 = prompt ("Digite o segundo número")
@@ -112,3 +112,52 @@ if (numero1 % numero2 === 0){
 } else {
     console.log (numero1 + " não é divisível por " + numero2)
 }
+
+if (numero2 % numero1 === 0) {
+    console.log (numero2 + " é divisível por " + numero1)
+} else {
+    console.log (numero2 + " não é divisível por " + numero1)
+}
+
+if (numero1 >= numero2) {
+    subtrair = numero1 - numero2
+ } else if (numero2 >= numero1) {
+    subtrair = numero2 - numero1
+ } else {
+}
+
+console.log ("A diferença entre eles é " + subtrair)
+*/
+
+
+
+//------------- Exercícios de Funções -------------
+
+/* 1 - NÃO FINALIZADA
+let arrayNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+function verificaNumeros () {
+    
+console.log("O segundo maior número é " + segNumMaior + " e o segundo menor número é " + segNumMenor)
+
+}
+
+verificaNumeros ()
+*/
+
+/* 2 - 
+
+const hello = () => {
+    alert("Hello Future4")    
+}
+
+hello ()
+*/  
+
+
+
+// ------------- Exercícios de Objetos -------------
+
+
+
+
