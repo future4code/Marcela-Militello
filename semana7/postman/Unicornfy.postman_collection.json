@@ -19,7 +19,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Reggae a vida com Amor\"\r\n}",
+					"raw": "{\r\n    \"name\":",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -91,7 +91,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Vem Me Satisfazer\", \r\n    \"artist\": \"MC Ingryd, DJ Henrique da VK\",\r\n    \"url\": \"https://open.spotify.com/track/63SHcJzckFykS8faA5zojY?si=rmeMVyayQ2mktwNuRBE2Gw\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Que Pais É Este\", \r\n    \"artist\": \"Legião Urbana\",\r\n    \"url\": \"https://open.spotify.com/track/5uxAhiNJJ0qtstiliUTaT2?si=fmO1Rpp6SxO1anPpYthuGg\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -99,7 +99,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/8d269fc4-108f-465c-9e6f-cc24ccabbe78/tracks",
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/5c57e296-192b-4412-a6f2-948903d2dc78/tracks",
 					"protocol": "https",
 					"host": [
 						"us-central1-labenu-apis",
@@ -109,7 +109,7 @@
 					"path": [
 						"labefy",
 						"playlists",
-						"8d269fc4-108f-465c-9e6f-cc24ccabbe78",
+						"5c57e296-192b-4412-a6f2-948903d2dc78",
 						"tracks"
 					]
 				},
@@ -129,7 +129,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=string",
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=Pop",
 					"protocol": "https",
 					"host": [
 						"us-central1-labenu-apis",
@@ -144,7 +144,7 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "string"
+							"value": "Pop"
 						}
 					]
 				},
@@ -164,7 +164,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/52d70b4c-94ea-4cab-9797-135fbc137f13/tracks",
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/5c57e296-192b-4412-a6f2-948903d2dc78/tracks",
 					"protocol": "https",
 					"host": [
 						"us-central1-labenu-apis",
@@ -174,7 +174,7 @@
 					"path": [
 						"labefy",
 						"playlists",
-						"52d70b4c-94ea-4cab-9797-135fbc137f13",
+						"5c57e296-192b-4412-a6f2-948903d2dc78",
 						"tracks"
 					]
 				}
@@ -193,7 +193,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/52d70b4c-94ea-4cab-9797-135fbc137f13",
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/9077ad7a-ff89-4a40-97d6-16b118dc01d2",
 					"protocol": "https",
 					"host": [
 						"us-central1-labenu-apis",
@@ -203,7 +203,7 @@
 					"path": [
 						"labefy",
 						"playlists",
-						"52d70b4c-94ea-4cab-9797-135fbc137f13"
+						"9077ad7a-ff89-4a40-97d6-16b118dc01d2"
 					]
 				}
 			},
@@ -225,7 +225,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/8d269fc4-108f-465c-9e6f-cc24ccabbe78/tracks/faf39905-e4d0-47a7-bb08-e525a79d2592",
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/5c57e296-192b-4412-a6f2-948903d2dc78/tracks/465645745234",
 					"protocol": "https",
 					"host": [
 						"us-central1-labenu-apis",
@@ -235,9 +235,9 @@
 					"path": [
 						"labefy",
 						"playlists",
-						"8d269fc4-108f-465c-9e6f-cc24ccabbe78",
+						"5c57e296-192b-4412-a6f2-948903d2dc78",
 						"tracks",
-						"faf39905-e4d0-47a7-bb08-e525a79d2592"
+						"465645745234"
 					]
 				}
 			},
