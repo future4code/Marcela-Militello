@@ -1,44 +1,40 @@
-import React from 'react';
-import axios from 'axios';
-import ListaUsuarios from './components/ListaUsuarios'
+import React from "react";
+import styled from "styled-components";
+import FormUsuario from "./components/FormUsuario";
+import ListaUsuarios from "./components/ListaUsuarios"
 
-export default class App extends React.Component {
+const AppContainer = styled.div`
+  font-family: sans-serif;
+  text-align: center;
+`;
+
+class App extends React.Component {
   state = {
-    name: "",
-    email: "",
-    listaUsers: []
+    paginaAtual: "formUsuario"
   };
 
-  createUser = () => {
-    const body = {
-      name: this.state.nome,
-      email: this.state.email
-    };
+trocarPagina = () => {
+  this.state.paginaAtual === "formUsuario"
+    ? this.setState({ paginaAtual: "listaUsuario" })
+    : this.setState({ paginaAtual: "formUsuario" });
+};
 
-    const request = axios.post(
-      "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-      body,
-      {
-        headers: {
-          Authorization: "marcela-militello-jackson"
-        }
-      }
-    );
+render() {
+  const paginaAtual = () => {
+    if (this.state.paginaAtual === "formUsuario") {
+      return <FormUsuario />;
+    } else if (this.state.paginaAtual === "listaUsuario") {
+      return <ListaUsuarios />;
+    }
+  };
 
-  render() {
-    const onChangeInput = (evento) => {
-      this.setState({name : evento.target.value });
-    };
-    const onChangeInput = (evento) => {
-      this.setState({email: evento.target.value});
-    };
+  return (
+    <AppContainer>
+      {paginaAtual()}
+      <button onClick={this.trocarPagina}>Trocar de página</button>
+    </AppContainer>
+  );
+}
+}
 
-    return (
-      <div className="App">
-        <label>Nome:</label>
-        <input value={this.state.name} onChange={onChangeInput} />
-        <label>Email:</label>
-        <input value={this.state.email} onChange={onChangeInput} />
-        <button onClick={this.createUser}>Salvar</button>
-      </div>
-    )}
+export default App;
