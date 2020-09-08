@@ -5,7 +5,6 @@ import axios from 'axios';
 const Home = styled.div`
   text-align: center;
 `
-
 export default class App extends React.Component {
   state = {
     atividade:"",
