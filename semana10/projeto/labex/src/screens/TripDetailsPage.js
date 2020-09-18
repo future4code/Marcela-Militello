@@ -34,7 +34,7 @@ const TripDetailsPage = () => {
 
   return (
     <div>
-        <p>Detalhes das viagens</p>
+        <p>DETALHES DAS VIAGENS</p>
 
         <button onClick={() => goToAdmPanelPage (history)}>
             VOLTAR
