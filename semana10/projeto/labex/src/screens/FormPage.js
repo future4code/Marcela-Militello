@@ -214,7 +214,7 @@ const FormPage = () => {
           >
             {selectCountry.map((country) => {
               return (
-                <option value={country.name}>{country.name}</option>
+                <option key={country.id} value={country.name}>{country.name}</option>
               )
             })}
           </select >

@@ -19,7 +19,7 @@ export const goBack = (history) => {
   };
 
   export const goToTripDetailsPage = (history) => {
-      history.push("/trip/details")
+      history.push("/trip/details/:id")
   };
 
   export const gotToFormPage = (history) => {

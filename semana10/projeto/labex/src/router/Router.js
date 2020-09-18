@@ -27,7 +27,7 @@ const Router = () => {
         <Route exact path="/login">
           <LoginPage />
         </Route>
-        <Route exact path="/trip/details">
+        <Route exact path="/trip/details/:id">
           <TripDetailsPage />
         </Route>
         <Route exact path="/adm-panel">
