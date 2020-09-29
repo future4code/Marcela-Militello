@@ -5,6 +5,7 @@ export const ScreenContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  margin-top: 5vh;
 `
 
 export const InputsContainer = styled.div`
@@ -13,19 +14,65 @@ export const InputsContainer = styled.div`
   width: 80vw;
   max-width: 450px;
   align-items: center;
-  margin-bottom: 20px;
+
+  > input {
+    margin-bottom: 20px;
+    border-radius: 7px;
+    outline: none;
+    height: 30px;
+  }
 `
 
 export const LoginFormContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 80vw;
-  max-width: 450px;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: 50px;
+
+  > button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold; 
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+
+    :hover {
+      background-color: red;
+      color: white;
+    }
+
+  }
 `
 
 export const SignUpButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 80vw;
-  max-width: 450px;
+  margin-top: 30px;
+
+  > button {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold; 
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+
+    :hover {
+      background-color: red;
+      color: white;
+    }
+
+  }
 `

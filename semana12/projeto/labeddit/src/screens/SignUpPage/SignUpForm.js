@@ -27,10 +27,9 @@ const SignUpForm = (props) => {
             value={form.username}
             name={'username'}
             onChange={handleInputChange}
-            fullWidth
+            type={'text'}
             required
             autoFocus
-            margin={'normal'}
           />
           <label>Email</label>
           <input
@@ -38,9 +37,7 @@ const SignUpForm = (props) => {
             name={'email'}
             onChange={handleInputChange}
             type={'email'}
-            fullWidth
             required
-            margin={'normal'}
           />
           <label>Senha</label>
           <input
@@ -48,18 +45,12 @@ const SignUpForm = (props) => {
             name={'password'}
             onChange={handleInputChange}
             type={'password'}
-            fullWidth
             required
-            margin={'normal'}
           />
         </InputsContainer>
         <button
           onClick={onClickSignUp}
-          color={'primary'}
-          variant={'contained'}
           type={'submit'}
-          fullWidth
-          margin={'normal'}
         >
           Cadastrar
         </button>

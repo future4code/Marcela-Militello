@@ -4,6 +4,7 @@ import LoginForm from './LoginForm'
 import { useHistory } from 'react-router-dom'
 import { goToSignUp } from '../../routes/Coordinator'
 import useUnprotectedPage from '../../hooks/useUnprotectedPage'
+import logo from '../../assets/logo.jpg'
 
 const LoginPage = (props) => {
   const history = useHistory()
@@ -11,14 +12,14 @@ const LoginPage = (props) => {
   
   return (
     <ScreenContainer>
+      <img alt={'logo'} src={logo}/>
       <LoginForm setButtonName={props.setButtonName}/>
       <SignUpButtonContainer>
         <button
           onClick={() => goToSignUp(history)}
           type={'submit'}
-          fullWidth
         >
-          Ainda não está cadastrado(a)? Clique aqui!
+          Não está cadastrado(a)? Clique aqui!
         </button>
       </SignUpButtonContainer>
     </ScreenContainer>

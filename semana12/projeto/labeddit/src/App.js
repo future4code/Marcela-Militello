@@ -8,7 +8,6 @@ function App() {
   const [buttonName, setButtonName] = useState(token ? 'Logout' : 'Login')
   
   return (
-
     <BrowserRouter>
       <Header buttonName={buttonName} setButtonName={setButtonName}/>
         <Router setButtonName={setButtonName}/>

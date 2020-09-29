@@ -43,7 +43,6 @@ const LoginForm = (props) => {
           <button
             onClick={onClickLogin}
             type={'submit'}
-            fullWidth
           >
             Entrar
           </button>

@@ -9,10 +9,11 @@ const Header = (props) => {
 
     const logout = () => {
         localStorage.removeItem('token')
+        setButtonName('Login')
       }
 
-      const menuAction = () => {
-        const token = localStorage.getItem("token")
+    const menuAction = () => {
+      const token = localStorage.getItem("token")
         if (token){
           logout()
           setButtonName('Login')
