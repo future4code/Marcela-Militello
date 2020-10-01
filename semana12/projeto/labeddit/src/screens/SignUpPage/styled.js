@@ -6,6 +6,10 @@ export const ScreenContainer = styled.div`
   align-items: center;
   width: 100vw;
   margin-top: 5vh;
+
+  > img {
+    width: 25%;
+  }
 `
 
 export const InputsContainer = styled.div`

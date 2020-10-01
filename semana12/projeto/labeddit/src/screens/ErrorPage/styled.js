@@ -5,5 +5,5 @@ export const ErroContainer = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    margin-top: 5vh;
+    margin-top: 10vh;
 `

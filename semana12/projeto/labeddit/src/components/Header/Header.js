@@ -16,7 +16,6 @@ const Header = (props) => {
       const token = localStorage.getItem("token")
         if (token){
           logout()
-          setButtonName('Login')
         }
         goToLogin(history)
       }

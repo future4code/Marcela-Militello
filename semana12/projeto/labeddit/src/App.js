@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header buttonName={buttonName} setButtonName={setButtonName}/>
-        <Router setButtonName={setButtonName}/>
+          <Router setButtonName={setButtonName}/>
     </BrowserRouter>
   );
 }
