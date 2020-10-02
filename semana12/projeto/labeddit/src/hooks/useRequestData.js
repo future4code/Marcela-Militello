@@ -21,7 +21,23 @@ const useRequestData = () => {
         })
     }, [])
   
-    return (data)
+    const getData = () => {
+      axios.get(`${baseUrl}/posts`, {
+        headers: {
+          Authorization: localStorage.getItem('token')
+        }
+      })
+        .then((response) => {
+          console.log(response.data)
+          setData(response.data)
+        })
+        .catch((error) => {
+          console.log(error)
+          alert('Ocorreu um erro, tente novamente')
+        })
+    }
+
+    return [data, getData]
   }
 
   export default useRequestData

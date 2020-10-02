@@ -4,13 +4,14 @@ import { useHistory } from "react-router-dom";
 import useRequestData from '../../hooks/useRequestData'
 import PostCard from './PostCard';
 import { goToPosts } from '../../routes/Coordinator';
-import { AddPostButton, FeedContainer } from './styled';
+import { FeedContainer, PostContainer } from './styled';
+import AddPostForm from '../../components/AddPostForm/AddPostForm';
 
 const FeedPage = () => {
     useProtectedPage()
 
     const history = useHistory()
-    const postsList = useRequestData([])
+    const [postsList, getPosts] = useRequestData([])
     const posts = postsList.posts
       
     const renderPosts = () => {
@@ -36,13 +37,12 @@ const FeedPage = () => {
       
         return (
           <>
+            <PostContainer>
+              <AddPostForm />
+            </PostContainer>
             <FeedContainer>
               {posts && posts.length > 0 ? renderPosts() : <div>Carregando...</div>}
             </FeedContainer>
-            {/* <AddPostButton onClick={() => goToAddPost(history)}>
-              <Add/>
-            </AddPostButton> */}
-      
           </>
         )
       }

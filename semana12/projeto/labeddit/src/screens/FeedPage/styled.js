@@ -1,5 +1,12 @@
 import styled from 'styled-components'
 
+export const PostContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+`
+
 export const PostCardContainer = styled.div`
   width: 100%;
   margin: 10px;
