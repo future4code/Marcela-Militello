@@ -37,6 +37,7 @@ const usuarios: conta[] = [{
 }]
 
 app.post("/usuarios", (req: Request, res: Response): void => {
+
     try {
         const { nome, cpf, dataNasc, extrato, saldo } = req.body;
         if (new Date().getFullYear() - (req.body.dataNasc / 10000) < 18) {
@@ -78,16 +79,23 @@ app.get("/usuarios", (req: Request, res: Response): void => {
     }
 });
 
-// app.get("/usuarios/:cpf", (req: Request, res: Response): void => {
+app.get("/usuarios/query", (req: Request, res: Response): void => {
+    const verificaCpfNome = usuarios.find((item) => String(item.cpf) === req.query.cpf
+        && item.nome === req.query.nome)
 
-//     try {
-//         res.status(200).send(usuarios);
-//     } catch (error) {
-//         res.status(400).send({
-//             message: "Erro, usuários não encontrados."
-//         });
-//     }
-// });
+    try {
+        if (!verificaCpfNome) {
+            throw new Error("Usuário não cadastrado!")
+        }
+
+        res.status(200).send(verificaCpfNome);
+
+    } catch (error) {
+        res.status(400).send({
+            message: (error.message)
+        });
+    }
+});
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if (server) {
