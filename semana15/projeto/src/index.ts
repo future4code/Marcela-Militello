@@ -38,21 +38,28 @@ const usuarios: conta[] = [{
 
 app.post("/usuarios", (req: Request, res: Response): void => {
     try {
-        if (new Date().getFullYear() - (req.body.dataNasc / 10000) >= 18) {
-            const { nome, cpf, dataNasc, extrato, saldo } = req.body;
-            const usuario: conta = {
-                nome: nome,
-                cpf: cpf,
-                dataNasc: dataNasc,
-                extrato: extrato,
-                saldo: saldo
-            }
-
-            usuarios.push(usuario);
-            res.status(200).send({ message: "Usuário criado com sucesso!" });
-        } else {
+        const { nome, cpf, dataNasc, extrato, saldo } = req.body;
+        if (new Date().getFullYear() - (req.body.dataNasc / 10000) < 18) {
             throw new Error("Usuário precisa ser maior de 18.")
         }
+
+        const cpfIgual = usuarios.find((item) => item.cpf === req.body.cpf)
+
+        if (cpfIgual) {
+            throw new Error("CPF já cadastrado!")
+        }
+
+        const usuario: conta = {
+            nome: nome,
+            cpf: cpf,
+            dataNasc: dataNasc,
+            extrato: extrato,
+            saldo: saldo
+        }
+
+        usuarios.push(usuario);
+        res.status(200).send({ message: "Usuário criado com sucesso!" });
+
     } catch (error) {
         res.status(400).send({
             message: (error.message)
@@ -70,6 +77,17 @@ app.get("/usuarios", (req: Request, res: Response): void => {
         });
     }
 });
+
+// app.get("/usuarios/:cpf", (req: Request, res: Response): void => {
+
+//     try {
+//         res.status(200).send(usuarios);
+//     } catch (error) {
+//         res.status(400).send({
+//             message: "Erro, usuários não encontrados."
+//         });
+//     }
+// });
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if (server) {
