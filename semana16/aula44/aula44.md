@@ -175,3 +175,46 @@ VALUES ("004",
 "2000-09-15", 
 10);
 ```
+
+### Exercício 6
+
+a) 
+```
+SELECT id, title, rating FROM Movie WHERE id = "001"; 
+```
+
+b)
+```
+SELECT * FROM Movie WHERE title = "Dona Flor e seus dois Maridos";
+```
+
+c) 
+```
+SELECT id, title, synopsis FROM Movie WHERE rating >= 7;
+```
+
+### Exercício 7
+
+a) 
+```
+SELECT * FROM Movie WHERE title LIKE "%vida%";
+```
+
+b) 
+```
+SELECT * FROM Movie
+WHERE title LIKE "%flor%" OR
+      synopsis LIKE "%dona%";
+```
+
+c)
+```
+SELECT * FROM Movie WHERE release_Date < CURDATE();
+```
+
+d)
+```
+SELECT * FROM Movie WHERE release_Date < CURDATE() AND
+	(title LIKE "%doce%" OR
+	synopsis LIKE "%doce%") AND rating > 7;
+```
