@@ -2,12 +2,10 @@ import knex from "knex";
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
-
-/**************************************************************/
+import { getActorById } from "./endpoints/getActorById"
+import { getActorByGender } from "./endpoints/getActorByGender";
 
 dotenv.config();
-
-/**************************************************************/
 
 export const connection = knex({
   client: "mysql",
@@ -20,11 +18,13 @@ export const connection = knex({
   },
 });
 
-/**************************************************************/
-
 const app: Express = express();
 
 app.use(express.json());
+
+app.get("/actor/:id", getActorById)
+
+app.get("/actor/query", getActorByGender)
 
 const server = app.listen(process.env.PORT || 3003, () => {
   if (server) {
@@ -35,19 +35,17 @@ const server = app.listen(process.env.PORT || 3003, () => {
   }
 });
 
-/**************************************************************/
+// app.get('/', testEndpoint)
 
-app.get('/', testEndpoint)
+// async function testEndpoint(req: Request, res: Response): Promise<void> {
+//   try {
+//     const result = await connection.raw(`
+//       SELECT * FROM Actor
+//     `)
 
-async function testEndpoint(req: Request, res: Response): Promise<void> {
-  try {
-    const result = await connection.raw(`
-      SELECT * FROM Actor
-    `)
-
-    res.status(200).send(result)
-  } catch (error) {
-    res.status(400).send(error.message)
-  }
-}
+//     res.status(200).send(result)
+//   } catch (error) {
+//     res.status(400).send(error.message)
+//   }
+// }
 
