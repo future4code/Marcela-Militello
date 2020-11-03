@@ -3,17 +3,14 @@ import { editUserFunc } from "../data/editUserFunc";
 
 export const editUser = async (req: Request, res: Response)=>{
     try{ 
-        const { id, name, nickname } = req.body;
+        const result = await editUserFunc (req.params.id, req.body.name, req.body.nickname)
 
-    if (!(id && name && nickname)) {
-        throw new Error("Usuário não foi atualizado")
-    }
-
-    const users = await editUserFunc(id, name, nickname)
-       //deu tudo certo
+    // if (!result) {
+    //     throw new Error("Usuário não foi atualizado")
+    // }
+       
        res.status(200).send({chaveDoRetorno: "Usuário atualizado com sucesso!"});
     }catch(error){
-       //deu tudo errado
        res.status(400).send(error.message);
     }
  };
