@@ -1,9 +1,20 @@
-import { Recipe } from "./Recipe"
-
 export type User = {
-   id: string,
+   id: number,
    name: string,
    email: string,
-   recipes: Recipe[],
-   password: string
+   type: string,
+}
+
+export type inputName = {
+   name: string,
+   // orderBy: string,
+   // orderType: string,
+   // page: number
+}
+
+export type inputType = {
+   type: string,
+   // orderBy: string,
+   // orderType: string,
+   // page: number
 }

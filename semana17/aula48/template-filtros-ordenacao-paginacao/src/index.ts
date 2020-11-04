@@ -3,7 +3,9 @@ import knex from "knex";
 import cors from "cors";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
-import getAllRecipes from "./endpoints/getAllRecipes";
+import { getAllUsers } from "./endpoints/getAllUsers";
+import { searchUsersByName } from "./endpoints/searchUsersByName";
+import { searchUsersByType } from "./endpoints/searchUsersByType";
 
 dotenv.config();
 
@@ -22,7 +24,9 @@ const app: Express = express();
 app.use(express.json());
 app.use(cors())
 
-app.get("/recipes/all", getAllRecipes);
+app.get("/users/all", getAllUsers);
+app.get("/users/search", searchUsersByName);
+app.get("/users/search/:type", searchUsersByType);
 
 const server = app.listen(process.env.PORT || 3003, () => {
    if (server) {
