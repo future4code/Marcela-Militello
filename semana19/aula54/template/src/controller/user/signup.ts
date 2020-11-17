@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import insertUser from "../data/insertUser";
-import { generateToken } from "../services/authenticator";
-import { hash } from "../services/hashManager";
-import { generateId } from "../services/idGenerator";
+import { generateToken } from "../../services/authenticator";
+import { hash } from "../../services/hashManager";
+import { generateId } from "../../services/idGenerator";
 
 export default async function signup(req: Request, res: Response) {
 

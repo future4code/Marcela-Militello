@@ -1,3 +1,5 @@
+import { CreateUserInput, stringToUserRole } from "../../model/User";
+
 async createUser(user) {
 
     const idGenerator = idGenerator();
@@ -6,6 +8,11 @@ async createUser(user) {
     const authenticator = authenticator();
 
     try{
+
+        const input: CreateUserInput = {
+            name: req.body.name,
+            role: stringToUserRole(req.body.role)
+        }
 
         if(!user.name || !user.email || !user.password || !user.role){
             throw new Error("Please fill all the fields");

@@ -5,6 +5,8 @@ async createUser(user) {
     const userDatabase = userDatabase();
     const authenticator = authenticator();
 
+export const createUserBusiness = await (input: )
+
     try{
 
         if(!user.name || !user.email || !user.password || !user.role){
